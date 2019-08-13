@@ -1,4 +1,4 @@
-# Customizable Gaming Environments
+# Customizable Simulated Environments
 This Repository contains the Game environments customizable for training models
 
 
