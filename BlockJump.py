@@ -6,7 +6,7 @@ class Environment:
 	def __init__(self):
 		#Parameters
 		playModeOptions = ["Random","User"]
-		self.PlayMode = playModeOptions[0]#"Random"#"User"#
+		self.PlayMode = playModeOptions[1]#"Random"#"User"#
 		self.frameSize = (300,800,3)
 		self.displayWindowName = "DragonJump"
 		self.groundLevel = 10
@@ -253,7 +253,7 @@ class Environment:
 		thisState = self.GetSceneAsStateVector()
 		return thisState,thisRewardValue,doneStatus
 
-"""
+
 if __name__ == "__main__":
 	
 	env = Environment()
@@ -269,4 +269,3 @@ if __name__ == "__main__":
 			print("You Won")
 			print("Final Score obtained is "+str(env.EgoScoreValue))
 			break
-"""

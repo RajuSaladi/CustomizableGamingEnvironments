@@ -8,7 +8,7 @@ class Environment:
 	def __init__(self):
 		#Parameters
 		playModeOptions = ["Random","User","Algorithm"]
-		self.PlayMode = playModeOptions[2]
+		self.PlayMode = playModeOptions[1]
 		self.frameSize = (300,300,3)
 		self.displayWindowName = "CarLaneChange"
 		self.noOfLanes = 3
@@ -251,7 +251,7 @@ class Environment:
 		thisState = self.GetTrafficeSceneAsStateVector()
 		return thisState,thisRewardValue,doneStatus,"_"
 
-"""
+
 if __name__ == "__main__":
 	
 	env = Environment()
@@ -267,4 +267,3 @@ if __name__ == "__main__":
 			print("You Won")
 			print("Final Score obtained is "+str(env.EgoScoreValueValue))
 			break
-"""

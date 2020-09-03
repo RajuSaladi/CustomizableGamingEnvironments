@@ -74,7 +74,6 @@ class GraphicFunctions:
 			newTrafficVehiclePosList.append((carPosX,carPosY,carWidth,carLength,carType))
 		return newTrafficVehiclePosList
 
-
 	def VectorizedIou(self,currentBox, boxesList):
 		x11, y11, w1, l1,_ = currentBox#np.split(currentBox, 4, axis=1)
 		x12 = x11+w1
